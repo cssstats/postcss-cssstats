@@ -1,0 +1,29 @@
+{
+  "name": "postcss-cssstats",
+  "description": "A PostCSS plugin for cssstats.",
+  "author": "John Otander",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jshint . && mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cssstats/postcss-cssstats.git"
+  },
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cssstats/postcss-cssstats/issues"
+  },
+  "homepage": "https://github.com/cssstats/postcss-cssstats",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
