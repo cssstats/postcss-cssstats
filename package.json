@@ -15,15 +15,25 @@
     "url": "https://github.com/cssstats/postcss-cssstats.git"
   },
   "keywords": [
-
+    "cssstats",
+    "css",
+    "stats",
+    "statistics",
+    "postcss",
+    "postcss-plugin"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cssstats/postcss-cssstats/issues"
   },
   "homepage": "https://github.com/cssstats/postcss-cssstats",
-  "dependencies": {},
+  "dependencies": {
+    "cssstats": "^1.5.1",
+    "lodash": "^3.8.0",
+    "postcss": "^4.1.9"
+  },
   "devDependencies": {
+    "is-present": "0.0.1",
     "mocha": "*"
   }
 }
