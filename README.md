@@ -11,9 +11,14 @@ npm install --save postcss-cssstats
 ## Usage
 
 ```javascript
-var postcssCssstats = require('postcss-cssstats');
+var postcss = require('postcss');
+var cssstats = require('postcss-cssstats');
 
-postcssCssstats();  // => true
+var output = postcss([
+  cssstats(function(stats) {
+    console.log(stats);
+  }))
+  .process(css);
 ```
 
 ## License
