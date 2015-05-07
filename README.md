@@ -21,8 +21,8 @@ var cssstats = require('postcss-cssstats');
 var output = postcss([
   cssstats(function(stats) {
     console.log(stats);
-  }))
-  .process(css);
+  })
+]).process(css);
 ```
 
 ## License
