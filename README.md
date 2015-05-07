@@ -1,6 +1,6 @@
 # postcss-cssstats [![Build Status](https://secure.travis-ci.org/cssstats/postcss-cssstats.png?branch=master)](https://travis-ci.org/cssstats/postcss-cssstats)
 
-A PostCSS plugin for cssstats.
+A PostCSS plugin for [cssstats](https://github.com/cssstats/cssstats).
 
 ## Installation
 
@@ -9,6 +9,10 @@ npm install --save postcss-cssstats
 ```
 
 ## Usage
+
+This plugin will return a cssstats object in the callback which can
+be used for css analysis. For more information on the stats object see
+the [cssstats documentation](https://github.com/cssstats/css-statistics#returned-object).
 
 ```javascript
 var postcss = require('postcss');
