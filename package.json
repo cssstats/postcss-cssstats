@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/cssstats/postcss-cssstats",
   "dependencies": {
-    "cssstats": "^1.5.1",
+    "cssstats": "1.6.0",
     "lodash": "^3.8.0",
     "postcss": "^4.1.9"
   },
