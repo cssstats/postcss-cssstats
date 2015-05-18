@@ -28,19 +28,20 @@ var output = postcss([
 ### Usage with Gulp.js
 
 ```js
-gulp.task('cssstats', function(){
+gulp.task('cssstats', function() {
     var cssstats = require('postcss-cssstats');
     var postcss = require('gulp-postcss');
     return gulp
-        .src('/path/to/file.css')
+        .src('app/_design/less/index.css')
         .pipe(
         postcss([
             cssstats(
                 function(stats) {
-                  console.log(stats);
-                })
-            ])
-        );
+                    console.log(stats);
+                }
+            )
+        ])
+    );
 });
 ```
 
