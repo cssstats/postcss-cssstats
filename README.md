@@ -25,6 +25,26 @@ var output = postcss([
 ]).process(css);
 ```
 
+### Usage with Gulp.js
+
+```js
+gulp.task('cssstats', function() {
+    var cssstats = require('postcss-cssstats');
+    var postcss = require('gulp-postcss');
+    return gulp
+        .src('app/_design/less/index.css')
+        .pipe(
+            postcss([
+                cssstats(
+                    function(stats) {
+                        console.log(stats);
+                    }
+                )
+            ])
+        );
+});
+```
+
 ## License
 
 MIT
