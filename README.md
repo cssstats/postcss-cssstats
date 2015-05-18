@@ -34,14 +34,14 @@ gulp.task('cssstats', function() {
     return gulp
         .src('app/_design/less/index.css')
         .pipe(
-        postcss([
-            cssstats(
-                function(stats) {
-                    console.log(stats);
-                }
-            )
-        ])
-    );
+            postcss([
+                cssstats(
+                    function(stats) {
+                        console.log(stats);
+                    }
+                )
+            ])
+        );
 });
 ```
 
